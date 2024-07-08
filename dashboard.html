@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Syne:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/dashboard/dashbord-general.css" />
+    <link rel="stylesheet" href="style/dashboard/body-dash.css" />
+    <link rel="stylesheet" href="style/dashboard/chart-bar.css" />
+    <link rel="stylesheet" href="style/dashboard/components.css" />
+    <link rel="stylesheet" href="style/dashboard/dash-form.css" />
+    <link rel="stylesheet" href="style/dashboard/table.css" />
+    <link rel="stylesheet" href="style/dashboard/notification-dash.css" />
+    <link rel="stylesheet" href="style/dashboard/blog-dash.css" />
+    <link rel="stylesheet" href="/richtexteditor/rte_theme_default.css" />
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script src="javascript/chat2.js"></script>
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script src="javascript/chartbar.js"></script>
+    <link rel="stylesheet" href="/richtexteditor/rte_theme_default.css" />
+    <script type="text/javascript" src="/richtexteditor/rte.js"></script>
+    <script
+      type="text/javascript"
+      src="/richtexteditor/plugins/all_plugins.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "-GoCH5R334rhkaHth",
+        });
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="dash-container">
+      <header class="header-dash">
+        <div class="left-dash-header">
+          <div class="dash-pad">
+            <p class="top-header-text">Ready Dashboard</p>
+          </div>
+          <div class="left-content">
+            <div class="admin-profile">
+              <img src="imagess/220003712-removebg-preview.png" />
+              <div class="name-profile">
+                <p class="name">Ernest</p>
+                <p class="admin">Administrator</p>
+              </div>
+            </div>
+          </div>
+          <div class="left-content">
+            <div class="left-buton">
+              <img src="imagess/icons/dashboard.png" />
+              <a href="#dashboard"> <p class="color-tex">Dashboard</p></a>
+            </div>
+          </div>
+          <div class="left-content">
+            <div class="left-buton">
+              <img src="imagess/icons/component.png" />
+              <a href="#component">
+                <p class="color-tex">Components</p>
+              </a>
+            </div>
+          </div>
+          <div class="left-content">
+            <div class="left-buton">
+              <img src="imagess/icons/form.png" />
+              <a href="#form"> <p class="color-tex">Form</p></a>
+            </div>
+          </div>
+          <div class="left-content">
+            <div class="left-buton">
+              <img src="imagess/icons/notification.png" />
+              <a href="#notification">
+                <p class="color-tex">Messages</p>
+              </a>
+              <div class="number-notification">4</div>
+            </div>
+          </div>
+          <div class="left-content">
+            <div class="left-buton">
+              <img src="imagess/icons/blogs.png" />
+              <a href="#blog">
+                <p class="color-tex">Blogs</p>
+              </a>
+            </div>
+          </div>
+          <div class="left-content">
+            <div class="left-buton">
+              <img src="imagess/icons/subscribtion.png" />
+              <a href="#subscribes">
+                <p class="color-tex">Add blog+</p>
+              </a>
+              <div class="number-notification">4</div>
+            </div>
+          </div>
+          <div class="left-content">
+            <div class="left-buton">
+              <a href="#subscribes">
+                <p class="color-tex" id="Logout-button">Logout</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="right-dash-header">
+          <div class="headre-right">
+            <img
+              class="menu-dash"
+              src="imagess/icons/menu-svgrepo-com.svg"
+              alt="menu-button"
+            />
+            <input type="text" placeholder="Search Any Options ..." />
+            <div class="admin-profile">
+              <img src="imagess/220003712-removebg-preview.png" />
+              <div class="name-profile">
+                <p class="name">Ernest</p>
+              </div>
+            </div>
+          </div>
+          <div class="body-dashbord">
+            <div class="right-scrol">
+              <div id="dashboard" class="first-page">
+                <p>Dashboard</p>
+                <div class="header-button">
+                  <div class="button btn-1">
+                    <img src="imagess/icons/user.png" />
+                    <div class="number-dash">
+                      <h1>Comments</h1>
+                      <p>231</p>
+                    </div>
+                  </div>
+                  <div class="button btn-2">
+                    <img src="imagess/icons/sub-vector.png" />
+                    <div class="number-dash">
+                      <h1>Messages</h1>
+                      <p>21</p>
+                    </div>
+                  </div>
+                  <div class="button btn-3">
+                    <img src="imagess/icons/writen-blog.png" />
+                    <div class="number-dash">
+                      <h1>Blogs Likes</h1>
+                      <p>11</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="chart-container">
+                  <div class="cicle">
+                    <div id="piechart_3d"></div>
+                  </div>
+                  <div class="chart">
+                    <div id="columnchart_material"></div>
+                    <script></script>
+                  </div>
+                </div>
+              </div>
+              <div id="component" class="first-page">
+                <p>components</p>
+                <div class="contain">
+                  <div class="components-conatiner">
+                    <div class="components-row">
+                      <p>Top-header</p>
+                      <button>background-color</button>
+                    </div>
+                    <div class="components-row">
+                      <p>body-section</p>
+                      <button>background-color</button>
+                    </div>
+                    <div class="components-row">
+                      <p>Footer</p>
+                      <button>background-color</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="form" class="first-page">
+                <p>form</p>
+                <div class="contain">
+                  <div class="form-container">
+                    <div class="form-left">
+                      <div class="form-line">
+                        <p>name :</p>
+                        <input type="text" />
+                      </div>
+                      <div class="form-line">
+                        <p>Email :</p>
+                        <input type="text" />
+                      </div>
+                      <div class="form-line">
+                        <p>user ID : :</p>
+                        <input type="text" />
+                      </div>
+                      <div class="form-line">
+                        <p>message :</p>
+                        <textarea
+                          class="longText"
+                          name="longText"
+                          rows="4"
+                          cols="49"
+                        ></textarea>
+                      </div>
+                      <div class="add-form">
+                        <button class="">+ add</button>
+                      </div>
+                    </div>
+                    <div class="form-guide">
+                      <p class="form-header">guidelines</p>
+                      <p class="form-description">
+                        Here manage the form to show the new visitor who need to
+                        subscribe
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="notification" class="first-page">
+                <p>Messages ✉️</p>
+                <div class="notification-container">
+                  <div class="one-chart">
+                    <p class="header-top">MUkama Sam 🫂</p>
+                    <p class="decription-notif">
+                      is simply dummy text of the printing and typesetting
+                      industry. Lorem Ipsum has been the industry's standard
+                      dummy text ever since the 1500s, when an unknown printer
+                      took a galley of type and scrambled it to make a type
+                      specimen book.
+                    </p>
+                    <div class="button">
+                      <input type="text" style="flex: 1" />
+                      <button class="accept">Read ✅</button>
+                      <button class="delete">Reply ⛔</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="blog" class="first-page">
+                <p style="margin-bottom: 10px">blogs 📃</p>
+                <div class="blogs-creater">
+                  <div class="store-two">
+                    <div class="blog-update">
+                      <!-- <div class="text-not">
+                        <p>Reasons Business needs Agency.</p>
+                        <button class="accept">update</button>
+                        <button class="delete">delete</button>
+                      </div>
+                      <div class="text-not">
+                        <p>Reasons Business needs Agency.</p>
+                        <button class="accept">update</button>
+                        <button class="delete">delete</button>
+                      </div>
+                      <div class="text-not">
+                        <p>Reasons Business needs Agency.</p>
+                        <button class="accept">update</button>
+                        <button class="delete">delete</button>
+                      </div>
+                      <div class="text-not">
+                        <p>Reasons Business needs Agency.</p>
+                        <button class="accept">update</button>
+                        <button class="delete">delete</button>
+                      </div>
+                      <div class="text-not">
+                        <p>Reasons Business needs Agency.</p>
+                        <button class="accept">update</button>
+                        <button class="delete">delete</button>
+                      </div>
+                      <div class="text-not">
+                        <p>Reasons Business needs Agency.</p>
+                        <button class="accept">update</button>
+                        <button class="delete">delete</button>
+                      </div>
+                      <div class="text-not">
+                        <p>Reasons Business needs Agency.</p>
+                        <button class="accept">update</button>
+                        <button class="delete">delete</button>
+                      </div>
+                      <div class="text-not">
+                        <p>Reasons Business needs Agency.</p>
+                        <button class="accept">update</button>
+                        <button class="delete">delete</button>
+                      </div>
+                      <div class="text-not">
+                        <p>Reasons Business needs Agency.</p>
+                        <button class="accept">update</button>
+                        <button class="delete">delete</button>
+                      </div> -->
+                    </div>
+                  </div>
+                </div>
+                <div id="subscribes" class="first-page">
+                  <p>Add Blog+</p>
+
+                  <div class="table-sub">
+                    <div class="title-blog">
+                      <p class="">Enter title :</p>
+                      <input
+                        id="title-of-blog"
+                        class="input_title_blog"
+                        placeholder="enter The title of Images"
+                      />
+                      <p class="title"></p>
+                    </div>
+                    <div class="title-blog">
+                      <p class="">Enter image :</p>
+                      <input type="file" id="imageInput" accept="image/*" />
+                      <p class="image-validation"></p>
+                    </div>
+
+                    <div class="texxeditor">
+                      <textarea id="richtext"></textarea>
+                    </div>
+                    <button class="post-blog" type="submit" id="saveblog">
+                      Create Blog
+                    </button>
+                    <button class="post-blog" type="submit" id="clear-blog">
+                      update Blog
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <!-- <script>
+      var editor1 = new RichTextEditor("richtext");
+    </script> -->
+    <script src="/javascript/dashboard/scroll.js"></script>
+    <script>
+      const tokenstore = localStorage.getItem("authToken");
+      const userType = localStorage.getItem("userType");
+      console.log(tokenstore);
+      console.log(userType);
+
+      if (!tokenstore || userType !== "Admin") {
+        window.location.href = "index.html"; // Replace "/home" with the appropriate home page URL
+      }
+    </script>
+
+    <script src="/javascript/rich/controlpost.js"></script>
+    <script src="/javascript/form/Querries.js"></script>
+  </body>
+</html>

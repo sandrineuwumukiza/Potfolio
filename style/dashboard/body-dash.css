@@ -1,0 +1,131 @@
+.body-dashbord {
+  flex: 1;
+  background-color: transparent;
+}
+.first-page {
+  min-height: 100vh;
+}
+.dash-pad {
+  background-color: transparent;
+  flex: 1;
+  border-bottom: 2px solid rgb(130, 130, 130);
+  padding: 20px;
+  min-width: 240px;
+  height: 6%;
+  margin-bottom: 10px;
+}
+
+.first-page p {
+  color: #4f4747;
+  text-align: left;
+  font-family: Syne;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 126%;
+  text-transform: uppercase;
+  padding-left: 3%;
+}
+.right-scrol {
+  overflow: auto;
+  height: 90vh;
+  margin-bottom: 50px;
+}
+.right-scrol::-webkit-scrollbar {
+  display: none;
+}
+.right-scrol::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+}
+.header-button {
+  padding-left: 50px;
+  padding-top: 30px;
+  display: flex;
+  gap: 40px;
+}
+.button {
+  width: 27%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+.btn-1 {
+  background-color: #25d366;
+}
+.btn-2 {
+  background-color: #7a7373;
+}
+.btn-3 {
+  background-color: var(--main-yelow-color);
+}
+.button img {
+  background-color: transparent;
+  height: 30px;
+}
+.number-dash p {
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  margin: 0;
+}
+.number-dash {
+  background-color: transparent;
+}
+.number-dash h1 {
+  color: #fff;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 720px) {
+  .header-button {
+    min-width: 340px;
+    padding-left: 0px;
+  }
+  .right-scrol {
+    overflow: scroll;
+    height: 100vh;
+  }
+  .first-page p {
+    align-items: center;
+    text-align: center;
+  }
+  .number-dash p {
+    font-size: 10px;
+  }
+
+  .number-dash h1 {
+    font-size: 16px;
+  }
+  .header-button {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+  }
+  .button {
+    width: 19%;
+    gap: 3px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header-button {
+    min-width: 340px;
+    padding-left: 0px;
+  }
+  .button {
+    align-items: center;
+    justify-content: center;
+  }
+  .button img {
+    display: none;
+  }
+}

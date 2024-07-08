@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my portifolio web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Syne:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/header.css" />
+    <link rel="stylesheet" href="style/general.css" />
+    <link rel="stylesheet" href="style/skills.css" />
+    <link rel="stylesheet" href="style/footer.css" />
+    <link rel="stylesheet" href="style/sinlgle-blog.css" />
+  </head>
+  <body>
+    <div class="conatiner">
+      <header>
+        <div class="size-header">
+          <div class="navbar">
+            <a href="index.html" class="logo-link">
+              <img src="imagess/L-removebg-preview.png" alt="" class="logo" />
+            </a>
+            <nav>
+              <ul class="menu-list-java">
+                <li>
+                  <a class="search-home color-tex" href="index.html">Home</a>
+                </li>
+                <li>
+                  <a class="search-home active-dash" href="blogs.html">Blogs</a>
+                </li>
+              </ul>
+            </nav>
+            <img
+              class="menu-icon"
+              src="imagess/icons/menu-svgrepo-com.svg"
+              alt="menu-button"
+              onclick="Toggle()"
+            />
+            <button class="left-button" id="setion-user">
+              <a id="profileStatus"></a>
+            </button>
+          </div>
+        </div>
+      </header>
+      <div class="blog-store">
+        <div id="blog-store-one" class="blog-body">
+          <div class="blog-full-text">
+            <img id="image-blog" src="" />
+            <div class="text-description-blog">
+              <span class="blog-title"></span><br />
+              <div class="load-container">
+                <div class="loader-button-button"></div>
+              </div>
+
+              <p id="small-desc" class="text-description-blog"></p>
+            </div>
+          </div>
+          <div id="text-desc" class="text-description-blog p-full"></div>
+          <div class="lekes-comments">
+            <div class="contain">
+              <img id="like-icons" src="imagess/icons/like-svgrepo-com.svg" />
+              <p id="likes-number">0</p>
+            </div>
+            <div class="contain">
+              <img src="imagess/icons/comments-3-svgrepo-com.svg" />
+              <p id="comments-number"></p>
+            </div>
+          </div>
+          <div class="comments-container">
+            <div id="comments-adder" class="comments">
+              <!-- <div class="one-comments">
+                <div class="photo">
+                  <img src="imagess/uknown user.png" />
+                </div>
+                <div class="text-comm">
+                  <p class="name">unknown</p>
+                  <p class="comments-descr">nice picture of blog 👌👌👌</p>
+                </div>
+              </div>
+              <div class="one-comments">
+                <div class="photo">
+                  <img src="imagess/uknown user.png" />
+                </div>
+                <div class="text-comm">
+                  <p class="name">unknown</p>
+                  <p class="comments-descr">nice picture of blog 👌👌👌</p>
+                </div>
+              </div>
+              <div class="one-comments">
+                <div class="photo">
+                  <img src="imagess/uknown user.png" />
+                </div>
+                <div class="text-comm">
+                  <p class="name">Kalisa</p>
+                  <p class="comments-descr">nice picture of blog 👌👌👌</p>
+                </div>
+              </div>
+              <div class="one-comments">
+                <div class="photo">
+                  <img src="imagess/profile.png" />
+                </div>
+                <div class="text-comm">
+                  <p class="name">Tchami</p>
+                  <p class="comments-descr">
+                    😂😂😂😂😂 this things are so funy
+                  </p>
+                </div>
+              </div>
+              <div class="one-comments">
+                <div class="photo">
+                  <img src="imagess/uknown user.png" />
+                </div>
+                <div class="text-comm">
+                  <p class="name">unknown</p>
+                  <p class="comments-descr">nice picture of blog 👌👌👌</p>
+                </div>
+              </div> -->
+            </div>
+            <div class="add-comments">
+              <p class="add-title-com">Add New Comments</p>
+              <div class="add-com">
+                <textarea
+                  id="comments--inputs"
+                  class="longText"
+                  name="longText"
+                  placeholder="Enter the comments on Blog ..."
+                  rows="10"
+                  cols="49"
+                ></textarea>
+                <button id="comments-button">Comments >></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="center">
+          <div class="button-left">&#8592;</div>
+          <div
+            id="single-blog-container-slider"
+            class="blog-page-container background-remover"
+          >
+            <!-- <a href="" class="link-blog start-blog background-remover">
+              <div class="blog-review background-remover">
+                <img src="imagess/blog-1.png" class="background-remover" />
+                <p class="blog-title background-remover">
+                  Reasons Business needs Agency.
+                </p>
+                <p class="blog-description background-remover">
+                  Design Club is a digital agency specialized in ecommerce. We
+                  build scalable, high-end web shops.
+                </p>
+              </div>
+            </a>
+            <a href="" class="link-blog background-remover">
+              <div class="blog-review background-remover">
+                <img src="imagess/blog-2.png" class="background-remover" />
+                <p class="blog-title background-remover add">
+                  Reasons Business needs Agency.
+                </p>
+                <p class="blog-description background-remover add-dec">
+                  Design Club is a digital agency specialized in ecommerce. We
+                  build scalable, high-end web shops.
+                </p>
+              </div>
+            </a>
+            <a href="" class="link-blog background-remover">
+              <div class="blog-review background-remover">
+                <img src="imagess/blog-3.png" class="background-remover" />
+                <p class="blog-title background-remover">
+                  Reasons Business needs Agency.
+                </p>
+                <p class="blog-description background-remover">
+                  Design Club is a digital agency specialized in ecommerce. We
+                  build scalable, high-end web shops.
+                </p>
+              </div>
+            </a>
+            <a href="" class="link-blog background-remover">
+              <div class="blog-review background-remover">
+                <img src="imagess/blog-1.png" class="background-remover" />
+                <p class="blog-title background-remover">
+                  Reasons Business needs Agency.
+                </p>
+                <p class="blog-description background-remover">
+                  Design Club is a digital agency specialized in ecommerce. We
+                  build scalable, high-end web shops.
+                </p>
+              </div>
+            </a>
+            <a href="" class="link-blog background-remover">
+              <div class="blog-review background-remover">
+                <img src="imagess/blog-3.png" class="background-remover" />
+                <p class="blog-title background-remover">
+                  Reasons Business needs Agency.
+                </p>
+                <p class="blog-description background-remover">
+                  Design Club is a digital agency specialized in ecommerce. We
+                  build scalable, high-end web shops.
+                </p>
+              </div>
+            </a>
+            <a href="" class="link-blog background-remover">
+              <div class="blog-review background-remover">
+                <img src="imagess/blog-2.png" class="background-remover" />
+                <p class="blog-title background-remover">
+                  Reasons Business needs Agency.
+                </p>
+                <p class="blog-description background-remover">
+                  Design Club is a digital agency specialized in ecommerce. We
+                  build scalable, high-end web shops.
+                </p>
+              </div>
+            </a> -->
+          </div>
+          <div class="button-right">&#8594;</div>
+        </div>
+        -->
+      </div>
+
+      <footer>
+        <div class="header-flexer footer-container">
+          <div class="footer-text">
+            <div class="section-logo-footer">
+              <a class="logo-link" href="">
+                <img src="imagess/top-logo.png" class="logo-footer" />
+              </a>
+              <p class="footer-left-text">
+                Archetypes of the MODERN. identity are reinvented through
+                details.
+              </p>
+              <p class="phone-footer">
+                <img
+                  src="imagess/icons/phone.png"
+                  class="icons-footer"
+                />+250-789-696-745
+              </p>
+              <p class="phone-footer">
+                <img
+                  src="imagess/icons/message.png"
+                  class="icons-footer"
+                />+250-789-696-745
+              </p>
+            </div>
+            <div class="betweeen-footer">
+              <div class="pages-footer">
+                <h1>Pages</h1>
+                <div class="links-list">
+                  <a>Home</a>
+                  <a>Portifolio</a>
+                  <a>About Me</a>
+                  <a>Blogs</a>
+                </div>
+              </div>
+              <div class="services-footer">
+                <h1>Services</h1>
+                <div class="links-list1">
+                  <p>Graphic Design</p>
+                  <p>UXUI Design</p>
+                  <p>Social Media</p>
+                </div>
+              </div>
+            </div>
+            <div class="right-footer">
+              <h1>Country/Region</h1>
+              <form>
+                <select id="dropdown" name="dropdown">
+                  <option value="option1">International Version</option>
+                  <option value="option2">Local Version</option>
+                  <option value="option3">State version</option>
+                </select>
+              </form>
+              <form>
+                <select id="dropdown" name="dropdown">
+                  <option value="option1">English</option>
+                  <option value="option2">French</option>
+                  <option value="option3">Kiswahilli</option>
+                  <option value="option3">Kinyarwanda</option>
+                </select>
+              </form>
+            </div>
+          </div>
+          <div class="copy-right">
+            <p>Copyright © 2024 Tchami Ernest. Kigali Rwanda</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="javascript/blogd/blog.js"></script>
+    <script src="javascript/blogd/singleblog.js"></script>
+    <script src="javascript/blogd/comments.js"></script>
+    <script src="javascript/homepage/singleblogpages.js"></script>
+    <script>
+      var menulist = document.querySelector(".menu-list-java");
+      const navbar = document.querySelector("nav");
+      // console.log(navbar);
+      menulist.style.maxHeight = "0px";
+      navbar.style.opacity = "1";
+      function Toggle() {
+        if (menulist.style.maxHeight === "0px") {
+          menulist.style.maxHeight = "250px";
+          menulist.style.maxwidth = "300px";
+          menulist.style.display = "block";
+          navbar.style.opacity = "1";
+        } else {
+          menulist.style.maxHeight = "0px";
+          navbar.style.opacity = "0";
+        }
+      }
+    </script>
+    <script>
+      const usename = localStorage.getItem("userEmail");
+      const profilebutton = document.getElementById("profileStatus");
+      const usersection = document.getElementById("setion-user");
+
+      if (usename) {
+        const final = usename.split("@")[0];
+        console.log(final);
+        usersection.style.display = "block";
+        profilebutton.innerHTML = final;
+      } else {
+        usersection.style.display = "none";
+      }
+      profilebutton.addEventListener("click", function () {
+        localStorage.clear();
+        location.reload();
+      });
+    </script>
+  </body>
+</html>
